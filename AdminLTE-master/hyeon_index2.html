@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AdminLTE 2 | Dashboard</title>
+<script>
+	$(document).ready(function() {
+
+		$('ul.tabs li').click(function() {
+			var tab_id = $(this).attr('data-tab');
+
+			$('ul.tabs li').removeClass('current');
+			$('.tab-content').removeClass('current');
+
+			$(this).addClass('current');
+			$("#" + tab_id).addClass('current');
+		})
+
+	})
+</script>
+
+<style type="text/css">
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: hidden;
+	display: block;
+}
+
+p {
+	font-size: 20px;
+}
+
+body {
+	margin-top: 100px;
+	font-family: 'Trebuchet MS', serif;
+	line-height: 1.6
+}
+
+ul.tabs {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li {
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current {
+	background: #ededed;
+	color: #222;
+}
+
+.tab-content {
+	display: none;
+	background: #ededed;
+	padding: 15px;
+}
+
+.tab-content.current {
+	display: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+
+#nav_head {
+	border-style: bouble;
+	border-solid: #c6b3ff;
+	background-color: powderblue;
+}
+
+#container {
+	/* 	float: left; */
+	/* 	height: 700px; */
+	/* 	width: 230px; */
+	display: inline-block;
+	background-color: #c6b3ff;
+	margin: 0 auto;
+	font-family: 'Jeju Gothic';
+}
+
+#contentbox {
+	vertical-align: middle;
+	/* 	height: 700px; */
+	/* 	width: 1000px; */
+	font-family: 'Jeju Gothic';
+	background-color: #c6b3ff;
+}
+</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div class="col-sm-2" id="container">
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="tab-1">카테고리</li>
+					<li class="tab-link" data-tab="tab-2">검색</li>
+				</ul>
+	
+				<div id="tab-1" class="tab-content current">
+	
+					<li><button style="float: left;">카테고리추가</button>
+						<button style="float: right;">카테고리편집</button></li>
+	
+					<ol>
+						<li>과정설계 업무</li>
+						<ul>
+							<li>과목 관리</li>
+							<li>패키지 관리</li>
+						</ul>
+						<li>전형관리 업무</li>
+						<ul>
+							<li>교육과정 관리</li>
+							<li>지원자 관리</li>
+						</ul>
+						<li>학사관리 업무</li>
+						<ul>
+							<li>수업 관리</li>
+						</ul>
+						<li>출신관리 업무</li>
+						<ul>
+							<li>수료생 관리</li>
+							<li>기업 취업 의뢰</li>
+						</ul>
+						<li>기초관리 업무</li>
+						<ul>
+							<li>운영자 관리</li>
+							<li>강사 관리</li>
+							<li>강의실 관리</li>
+							<li>강의 평가</li>
+							<li>업무구분 관리</li>
+							<li>기수 관리</li>
+						</ul>
+						<li>리포트</li>
+						<ul>
+							<li>통계 1</li>
+							<li>통계 2</li>
+							<li>통계 3</li>
+						</ul>
+	
+					</ol>
+				</div>
+				<!-- 				<div id="tab-2" class="tab-content"> -->
+				<!-- 
+				<div id="tab-content">
+					<li class="tab-link" data-tab="tab-2">검색</li> --- ★-- -------- ----
+					---- ---- -★- ---- ---- -------- ---- -★- ---- ---- ---- ----
+					-------- ---- ---- ---- ---- ---- --★ -------- ★-- ---- ---- ----
+					---- ---- -------- ---- ---- --★ ---- ---- ---- -------- ---- ----
+					---- --★
+				</div>
+				 -->
+				<!-- 
+			  <div id="tab-3" class="tab-content">
+			---- ★-- -------- ---- ---- ---- -★- ---- ---- -------- ---- -★- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- --★ -------- ★-- ---- ---- ---- ---- ---- -------- ---- ---- --★ ---- ---- ---- -------- ---- ---- ---- --★
+			  </div>
+		  -->
+			</div>
+	
+			<div class="col-sm-10" id="contentbox">
+				<table class="topNavTbl">
+					<tr>
+						<th>업무구분</th>
+						<td>
+							<form>
+								<select>
+									<option value="0">국가기간전략산업</option>
+									<option value="1">전문가과정</option>
+								</select>
+							</form>
+						</td>
+						<th>선택패키지</th>
+						<td colspan="3">자바 스프링 파이썬 960
+							<button
+								style="border: none; padding: 3px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 5px; font-size: 14px; float: right;">패키지
+								보기</button>
+						</td>
+	
+					</tr>
+	
+				</table>
+	
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

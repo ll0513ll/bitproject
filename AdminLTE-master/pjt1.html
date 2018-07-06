@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>지원자 관리</title>
+
+</head>
+<body>
+<div id="navigation_area" style="width:20%; height:1150px; float:left; background-color: #c6b3ff;">
+네비게이션자리
+</div>
+<div id="content_area" style="width:80%; height:700px;">
+<div id="blank_area" style="width:80%; height:50px;"></div>
+	
+	<!-- <div id="first_div">
+		<h4 style = "float:left;">■ 지원자 검색</h4>
+		<button style = "float:right;">교육과정 보기</button>
+	</div> -->
+	
+	<div id="first_table" style = "width: 976px; height:120px;margin-top:50px;margin-left:10px;float:left;">
+		
+		<table border="1" style="width: 100%;margin:0 auto; ">
+		<caption style="text-align: left;"> ■ 지원자 검색<button style = "float:right;margin-bottom:5px">교육과정 보기</button></caption>
+			<tr>
+				<td style=" width: 20%;">업무구분</td>
+				<td> 교육과정(반) 명
+					<div style="float:right;">
+					<input type = "radio" name="person" style=" border: 1px solid;">전체
+					<input type = "radio" name="person" style="border: 1px solid;">모집중
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style = "width:20%;">
+					<select> 
+						<option>국가기관</option>
+						<option>단기과정</option>	
+					</select>
+				</td>
+				<td style = "width:60%;">
+					<select>
+						<option>KUKA18_RD01 라즈베리파이를 활용한 IoT서비스 고급인력 양성과정</option>
+						<option>KUKA18_RD01 라즈베리파이를 활용한 IoT서비스 고급인력 양성과정</option>
+					</select>
+				</td>
+			</tr>
+		
+		</table>
+		<div style = "width: 976px; height:8px;margin:0 auto;"></div><!-- 의미없는 띄어쓰기 -->
+		<div style = "width: 100%; height:100px;margin:0 auto;">
+			<center>
+				<button>조회</button>
+			</center>
+		</div>
+	
+	</div>
+	
+	<div id="second_table" style = "text-overflow:ellipsis; overflow:hidden; white-space:nowrap;overflow:scroll; width: 976px; height:50%;margin-top:50px;margin-left:10px;border:1px solid;float:left;">
+		
+		<table border="1" style="table-layout:fixed;width: 100%;margin:0 auto; text-align:center; float:left;">
+		<caption style="text-align: left;"> ■ 지원자 리스트</caption>
+			<tr>
+				<td></td>
+				<td>출력</td>
+				<td>과정</td>
+				<td>이름</td>
+				<td>생년월일</td>
+				<td>성별</td>
+				<td>전형결과</td>
+				<td>핸드폰</td>
+				<td>지원일자</td>
+				<td>전형일자</td>
+				<td>학교</td>
+				<td>전공</td>
+				<td>입금여부</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 5px;">1</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 5px;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15px;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10px;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20px;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 5px;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 5px;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30px;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20px;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20px;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20px;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15px;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 5px;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">2</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">3</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">4</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">5</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">6</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">7</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">8</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">9</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">10</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">11</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+			<tr>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">12</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;"><input type="checkbox"></td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">KUKA18_RD01</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 10;">이서현</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">870513</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">여</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">합격</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 30%;">010-4298-2798</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-05-13</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">18-08-20</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 20%;">대림대학홍익대학 서울대</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 15%;">정보통신</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;width: 7%;">미납</td>
+			</tr>
+		
+		</table>
+	</div><!-- second_table div area -->
+		
+	<div id="third_table_left" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;overflow:scroll; width: 292px; height:50%;margin-top:50px;margin-left:10px;border:1px solid;float:left;">
+		
+		<table border="1" style="table-layout:fixed;width: 100%;text-align:center;margin-top:5px;">
+			<tr>
+				<td style=" width: 10%;"></td>
+				<td style=" width: 45%;">전형일자</td>
+				<td style=" width: 45%;text-overflow:ellipsis; overflow:hidden;">과정명</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2018-02-05</td>
+				<td style = "text-overflow:ellipsis;text-overflow:ellipsis; overflow:hidden;">
+					라즈베리파이를 활용한 IoT서비스 고급인력 양성과정</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>2018-03-07</td>
+				<td>방학특강 Java</td>
+			</tr>
+		
+		</table>
+		
+	</div><!-- third_table div area -->
+	
+	<div id="fourth_table_right" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;width: 684px; height:50%;margin-top:50px;margin-left:5px;border:1px solid;float:left;">
+	<div style="float:left;width: 480px;">	
+		<div id="fourth_first_table" style="width: 100%; height:30%;float:left;"><!-- fourth_table div area/first table -->
+			<table border="1" style="width: 100%;margin-top:5px;margin-bottom:30px;table-layout:fixed;">
+				<tr>
+					<td style=" width: 30%;">업무구분</td>
+					<td style=" width: 70%;">
+						<select style=" width: 95%;">
+							<option>국가기관</option>
+							<option>단기과정</option>	
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">교육과정명</td>
+					<td>
+						<input type = "radio" name="person" style=" border: 1px solid;">전체
+						<input type = "radio" name="person" style="border: 1px solid;">모집중
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select style=" width: 95%;">
+							<option>라즈베리파이를 활용한 IoT서비스 고급인력 양성과정</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div><!-- fourth_table div area/first table end-->
+		<div id="fourth_second_table" style="width: 100%; height:23%;float:left;"><!-- fourth_table div area/second table -->
+			
+			<table border="1" style="width: 100%;margin-top:5px;margin-bottom:30px;table-layout:fixed;">
+				<tr>
+					<td style="width: 15%;">지원종류</td>
+					<td style="width: 30%;">
+						<select>
+							<option>노동부지원</option>
+							<option>유료과정</option>	
+						</select>
+					</td>
+					<td style="width: 15%;">전형과목</td>
+					<td style="width: 30%;">
+						<select>
+							<option>Java</option>
+							<option>C++</option>	
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td >전형점수</td>
+					<td>
+						<input type = "text" style=" border: 1px solid;width:100px">
+					</td>
+					<td >전형결과</td>
+					<td>
+						<select>
+							<option>합격</option>
+							<option>불합격</option>	
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="fourth_third_table" style="width: 100%; height:30%;float:left;"><!-- fourth_table div area/third table -->
+			<table border="1" style="width: 100%;margin-top:5px;margin-bottom:30px;table-layout:fixed;">
+				<tr>
+					<td >계좌입금일</td>
+					<td>
+						<input type="text" name="date" id="date2"size="8px">
+					</td>
+					<td >계좌입금금액</td>
+					<td>
+						<input type = "text" style=" border: 1px solid;"size="8px">
+					</td>
+				</tr>
+				<tr>
+					<td >카드결제일</td>
+					<td>
+						<input type="text" name="date" id="date2"size="10px">
+					</td>
+					<td >카드결제액</td>
+					<td>
+						<input type = "text" style=" border: 1px solid;"size="10px">
+					</td>
+				</tr>
+				<tr>
+					<td >입금여부</td>
+					<td>
+						<select>
+							<option>완납</option>
+							<option>미납</option>	
+							<option>부분납</option>	
+						</select>
+					</td>
+					<td >결제액 계</td>
+					<td>
+						<input type = "text" style=" border: 1px solid;"size="10px">
+					</td>
+				</tr>
+			</table>
+		</div><!-- fourth_table div area/third table end -->
+		</div>
+		<div id="fourth_third_table" style="width: 200px;height:100%;float:left;"><!-- fourth_fourth_table-->
+			<!-- <table style="table-layout:fixed;width: 100%;height:100%;">
+				<tr>
+					<td>
+					<input type="text" style="width:100%;height:100%">
+					</td>
+				</tr>
+			</table> -->
+			<textarea style="width:95%;height:84%;resize:none;margin-top:5px;margin-left:5px;"></textarea>
+		</div><!-- fourth_fourth_table end-->
+	</div><!-- fourth_table div area end-->
+	
+</div>
+
+</body>
+</html>
